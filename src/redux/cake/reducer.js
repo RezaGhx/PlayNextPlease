@@ -1,3 +1,5 @@
+import { BUY_CAKE } from './types';
+
 const initialState = {
   numOfCakes: 10,
 };
