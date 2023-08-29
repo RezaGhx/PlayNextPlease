@@ -6,7 +6,7 @@ import { buyCake } from 'redux/cake/actions';
 
 // const Cake = (props) => {
 const Cake = () => {
-  const cakes = useSelector((state) => state.numOfCakes);
+  const cakes = useSelector((state) => state.cake.numOfCakes);
   const dispatch = useDispatch();
   return (
     <div>
