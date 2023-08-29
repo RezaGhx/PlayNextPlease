@@ -17,17 +17,17 @@ const Cake = () => {
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    numOfCakes: state.numOfCakes,
-  };
-};
+// const mapStateToProps = (state) => {
+//   return {
+//     numOfCakes: state.numOfCakes,
+//   };
+// };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    buyCake: () => dispatch(buyCake()),
-  };
-};
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     buyCake: () => dispatch(buyCake()),
+//   };
+// };
 
 export default Cake;
 // export default connect(mapStateToProps, mapDispatchToProps)(Cake);
