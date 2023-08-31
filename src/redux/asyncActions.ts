@@ -7,7 +7,7 @@ const applyMiddleware = redux.applyMiddleware;
 // actions
 const FETCH_USERS_REQUESTS = 'FETCH_USERS_REQUESTS';
 const FETCH_USERS_SUCCESS = 'FETCH_USERS_SUCCESS';
-const FETCH_USERS_FALIURE = 'FETCH_USERS_FALIURE';
+const FETCH_USERS_FAILURE = 'FETCH_USERS_FAILURE';
 
 function fetchUsersRequests() {
   return {
@@ -22,9 +22,9 @@ function fetchUsersSuccess(users) {
   };
 }
 
-function fetchUsersFaliure(error) {
+function fetchUsersFailure(error) {
   return {
-    type: FETCH_USERS_FALIURE,
+    type: FETCH_USERS_FAILURE,
     payload: error,
   };
 }
@@ -63,7 +63,7 @@ const fetchUsers = () => {
         dispatch(fetchUsersSuccess(userId));
       })
       .catch((error) => {
-        dispatch(fetchUsersFaliure(error));
+        dispatch(fetchUsersFailure(error));
       });
   };
 };
