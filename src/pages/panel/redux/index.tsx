@@ -6,8 +6,10 @@ import Soda from 'components/redux/soda';
 const Redux = () => {
   return (
     <Provider store={store}>
-      <Cake />
-      <Soda />
+      <div className="flex justify-center p-5 bg-slate-400">
+        <Cake />
+        <Soda />
+      </div>
     </Provider>
   );
 };
